@@ -19,7 +19,6 @@ The project focuses on the following areas:
 - Data preprocessing and feature engineering from a global salary survey dataset.
 - Developing a machine learning model to predict annual salary based on job title, experience, location, industry, and demographics.
 - Deploying the model through a user-friendly Streamlit application.
-- Creating a business dashboard in Looker Studio to visualize salary distributions and key influencing factors.
 
 ### Preparation
 
