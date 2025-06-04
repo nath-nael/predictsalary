@@ -134,49 +134,49 @@ You can also access the deployed Streamlit application here: [Salary Predictor](
 
 ## Model Overview
 - **Best Model:** RandomForest
-- **Best Accuracy:** 0.6536 (65.36%)
+- **Best Accuracy:** 0.6623 (66.23%)
 ## Salary Classification Report
 
 | Class | Precision | Recall | F1-Score | Support |
 |-------|-----------|--------|----------|---------|
-| 0     | 0.37      | 0.36   | 0.36     | 930     |
-| 1     | 0.28      | 0.26   | 0.27     | 1042    |
-| 2     | 0.22      | 0.22   | 0.22     | 918     |
-| 3     | 0.24      | 0.23   | 0.24     | 808     |
-| 4     | 0.41      | 0.48   | 0.44     | 947     |
+| 0     | 0.42      | 0.41   | 0.42     | 1196    |
+| 1     | 0.25      | 0.23   | 0.24     | 1018    |
+| 2     | 0.22      | 0.22   | 0.22     | 1129    |
+| 3     | 0.28      | 0.30   | 0.29     | 1159    |
+| 4     | 0.44      | 0.44   | 0.44     | 1108    |
 
-- **Overall Accuracy:** 31%
-- **Macro Average F1-Score:** 0.31
-- **Weighted Average F1-Score:** 0.31
+- **Overall Accuracy:** 32%
+- **Macro Avg F1-Score:** 0.32
+- **Weighted Avg F1-Score:** 0.32
 
 ### Interpretation:
-- The model struggles to accurately classify salary categories, achieving only 31% accuracy.
-- Class 4 (highest support and presumably highest salary range) shows the best performance, with the highest precision (0.41), recall (0.48), and F1-score (0.44).
-- Other classes have low precision, recall, and F1-scores, indicating poor classification performance across most salary ranges.
-- The model may require more feature engineering or data balancing to improve performance
+- The model achieves **moderate accuracy** in predicting salary ranges, but class-level performance is still limited.
+- **Class 4** (likely the highest salary band) shows the best performance with balanced precision and recall (0.44).
+- **Class 2 and 1** have the weakest performance, indicating the model has difficulty distinguishing middle or lower-mid salary classes.
+- The model likely benefits from **more refined features**, **balanced class distribution**, and **hyperparameter tuning** to improve predictive power.
+
 ---
 
 ## Additional Compensation Classification Report
 
 | Class | Precision | Recall | F1-Score | Support |
 |-------|-----------|--------|----------|---------|
-| 0     | 1.00      | 1.00   | 1.00     | 4630    |
-| 1     | 1.00      | 0.09   | 0.17     | 11      |
-| 2     | 0.00      | 0.00   | 0.00     | 1       |
-| 3     | 0.00      | 0.00   | 0.00     | 2       |
-| 4     | 1.00      | 1.00   | 1.00     | 1       |
+| 0     | 1.00      | 1.00   | 1.00     | 5610    |
 
-- **Overall Accuracy:** ~100%
-- **Macro Average F1-Score:** 0.43
-- **Weighted Average F1-Score:** 1.00
+- **Overall Accuracy:** 100%
+- **Macro Avg F1-Score:** 1.00
+- **Weighted Avg F1-Score:** 1.00
 
-### Interpretation:
-- The model achieves near-perfect accuracy overall due to the dominance of class 0 (majority class).
-- Minority classes (1, 2, 3) have very poor recall and F1-scores, showing the model rarely detects these classes correctly.
-- This suggests a severe class imbalance problem in Additional Compensation data.
-- Improving minority class prediction would require techniques such as resampling, class weighting, or specialized algorithms.
+### ⚠️ Interpretation:
+- The model **predicts all instances as class 0**, which explains the perfect scores — but it's **not meaningful** due to **lack of class diversity**.
+- This reflects a **severe class imbalance** in the `Additional Compensation` target (only class 0 present).
+- To improve:
+  - Ensure the dataset includes multiple classes.
+  - Apply oversampling or data collection to improve class representation.
+  - Otherwise, this task may not be suitable for classification.
 
 ---
+
 ### Why RandomForest Performed Best:
 - Handles categorical + numerical data well.
 - Robust to noise and missing values.
