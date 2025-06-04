@@ -218,24 +218,22 @@ def main():
         # Industry selection
         industry = st.selectbox(
             "Industry",
-            options=['Technology', 'Finance', 'Healthcare', 'Education', 'Government',
+            options=['Tech', 'Finance', 'Healthcare', 'Education', 'Government',
                     'Retail', 'Manufacturing', 'Consulting', 'Other'],
             index=0
         )
         
-        # Job Title
         job_title = st.selectbox(
             "Job Title Category",
-            options=['Software Engineer', 'Data Scientist', 'Manager', 'Analyst',
+            options=['Executive','Risk','Doctor','Software Engineer', 'Data Scientist', 'Manager', 'Analyst',
                     'Consultant', 'Developer', 'Director', 'Other'],
             index=0
         )
         
-        # Country
         country = st.selectbox(
             "Country",
-            options=['United States', 'Canada', 'United Kingdom', 'Germany',
-                    'Australia', 'India', 'Other'],
+            options=['United States', 'Canada', 'United Kingdom', 'Germany','France','Mexico',
+                    'Australia', 'India', 'Indonesia','Singapore','Hongkong','Other'],
             index=0
         )
     
