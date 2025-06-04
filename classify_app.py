@@ -42,12 +42,12 @@ def load_model_components():
     # 🧩 Step 1: Define GDrive file IDs
     gdrive_files = {
         "model_components.pkl": "1zkaI5gRiyYxS5w5lz9qdXCEVxrT9kk_v",
-        "best_model.pkl": "1xFaGoQR-upcSlJIiPSt9AogQu9MLW_3h",
-        "scaler.pkl": "1-vJlD7gF320W97_3QuiQMxt-UvzAYq_b",
-        "pca.pkl": "18N9G_4EBHQd8XYy-WqsjAW3bDFnnBsoN",
-        "target_encoder.pkl": "19hO81sSNi_Bd2CSpHXoILriaizOAX1GT",
-        "ordinal_encoder.pkl": "1DQs0xqHkwuhudAlTZFXAX3APq-YGgfW6",
-        "model_metadata.pkl": "1DKG6JqMYcPOwtsMZcnkZ8nFF3feLGqrv",
+        "best_model.pkl": "1JL26aDeahp2f3mB8xadnSPpUuFhPftfg",
+        "scaler.pkl": "1isHUamaswqvtc-4mF45zwzNZIr2qk-IW",
+        "pca.pkl": "139abFK--DOV_myanwc2-4NFU3nrGDIo3",
+        "target_encoder.pkl": "1CkFNkk6GTUTrihnrFMe8Qy2_0YCKuTy7",
+        "ordinal_encoder.pkl": "1Df2bklrj-eKJeAt2PpwxIUjOxR__0oJw",
+        "model_metadata.pkl": "1-pxBMsnIvp3GaAutbi5Rk43sqc86ps2m",
     }
 
     # 🧩 Step 2: Attempt to download each file if not present
