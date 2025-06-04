@@ -56,7 +56,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-You can also access the deployed Streamlit application here: [Salary Predictor](https://salarypredictorsb.streamlit.app/)
+You can also access the deployed Streamlit application here: [Salary Predictor](https://predictsalaryml.streamlit.app/)
 
 ## Machine Learning Process
 
